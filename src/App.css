@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --mdc-theme-primary: #6200ee;
+  --mdc-theme-secondary: #03dac4;
+  --mdc-theme-error: #b00020;
+  --mdc-theme-background: #fff;
+  --mdc-theme-surface: #fff;
+  --mdc-theme-on-primary: rgba(255, 255, 255, 1);
+  --mdc-theme-on-secondary: rgba(0, 0, 0, 0.87);
+  --mdc-theme-on-surface: rgba(0, 0, 0, 0.87);
+  --mdc-theme-on-error: #fff;
+  --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-primary-on-dark: white;
+  --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+}
+.App {
+  text-align: center;
+  /* margin: 0 auto; */
+  height: 150vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, rgb(173, 173, 173), grey);
+}
+
+.box {
+  border: 2px solid #6200ee;
+  border-radius: 20px;
+  width: 30em;
+  height: auto;
+  background: rgba(255, 255, 255, 0.281);
+  box-shadow: #1b1b1b49 4px 3px 3px;
+  margin: 0 auto;
+  /* margin-top: 15em; */
+  padding: 2em;
+  position: absolute;
+
+  top: 40%;
+  left: 40%;
+  margin: -100px 0 0 -150px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  margin: 0 auto;
+}
+#button {
+  width: 15em;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.spacer {
+  margin: 0.2em;
+}
+.title {
+  /* color: #03dac4; */
+  padding: 0.5em;
+  background-image: -webkit-linear-gradient(270deg, #1921da, #6200ee, #a900ee);
+  -webkit-background-clip: text, border-box;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: hue 20s ease infinite;
+}
+@-webkit-keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(-0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(-70deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(-0deg);
+  }
+}
+.subTitle {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 1em;
+}
+.weather {
+  height: 5em;
+  margin: 0 auto;
+  padding: 3em;
+  font-size: 1.4em;
+  color: #6200ee;
+}
+.city {
+  font-size: 1.6em;
+  margin: 0.3em;
+}
