@@ -9,10 +9,9 @@ React | HTML | CSS | Material UI | OpenWeatherMap API
 
 ## Screenshots
 ### Home
-![Home](/.png)
-### Shop
-![Shop](/.png)
-### Cart
-![Cart](/.png)
+![Home](/Screen Shot 2019-04-28 at 1.09.40 PM.png)
+### Search Results
+![Shop](/)
+
 
 
