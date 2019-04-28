@@ -1,11 +1,11 @@
-import React from "react";
-import "../App.css";
+import React from 'react';
+import '../App.scss';
 class Weather extends React.Component {
   render() {
     return (
-      <div className="weather">
+      <div>
         {this.props.country && this.props.city && (
-          <p className="city">
+          <p className='city'>
             {this.props.city}, {this.props.country}
           </p>
         )}

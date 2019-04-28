@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import "../App.css";
+import '../App.scss';
 const Titles = props => {
   return (
     <div>
-      <h1 className="title">Nimbus</h1>
-      <p className="subTitle">Enter your city, get your weather:</p>
+      <h1 className='title'>Nimbus</h1>
+      <p className='subTitle'>Enter your city, get your weather:</p>
     </div>
   );
 };

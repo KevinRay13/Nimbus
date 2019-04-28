@@ -40,7 +40,7 @@
   border: 2px solid #6200ee;
   border-radius: 20px;
   width: 30em;
-  height: auto;
+  height: 35em;
   background: rgba(255, 255, 255, 0.281);
   box-shadow: #1b1b1b49 4px 3px 3px;
   margin: 0 auto;
@@ -51,6 +51,15 @@
   top: 40%;
   left: 40%;
   margin: -100px 0 0 -150px;
+}
+.weatherMain {
+  height: auto;
+  width: 10em;
+  height: 5em;
+  margin: 0 auto;
+
+  font-size: 1.4em;
+  color: #6200ee;
 }
 
 .formContainer {
@@ -87,6 +96,7 @@
     -webkit-filter: hue-rotate(-0deg);
   }
 }
+
 .subTitle {
   color: rgba(0, 0, 0, 0.54);
   padding: 1em;
@@ -102,3 +112,73 @@
   font-size: 1.6em;
   margin: 0.3em;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Gill Sans;
+  margin: 0;
+  // background: #333;
+}
+#blurryscroll {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  position: fixed;
+  filter: blur(20px);
+  height: 5em;
+  z-index: 1000;
+}
+.content {
+  padding-top: 5em;
+}
+nav {
+  @extend #blurryscroll;
+  filter: none;
+  text-align: right;
+  z-index: 1000000;
+  a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+  }
+}
+#grey {
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.281);
+  z-index: 1000000000;
+}
+// .App {
+//   margin-top: -6rem;
+
+//   padding: 2rem;
+// }
+main {
+  margin: 0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl9CQQps_eojOKJXB4JWJNduXNtSFeHQ1iJG3Cr8Db_Q29mYucCQ');
+  background-size: cover;
+  // margin-top: 5rem;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+
+  .app {
+    // margin-top: 6rem;
+    width: 120%;
+
+    // margin-left: 30%;
+    line-height: 1.3;
+    background: rgba(255, 255, 255, 0.75);
+    // padding: 2rem;
+  }
+}
+// @media all and (max-width: 500px) {
+//   main div {
+//     width: 85%;
+//     margin: 0 auto;
+//   }

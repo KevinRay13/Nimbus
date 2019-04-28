@@ -10,6 +10,7 @@
     "@rmwc/textfield": "^5.2.0",
     "@rmwc/theme": "^5.2.0",
     "axios": "^0.18.0",
+    "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
